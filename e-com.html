@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Comm application</title>
+    <link rel="stylesheet" type="text/css" href="cs.css" />
+    <style>
+      .main-content {
+        margin: 10px;
+      }
+
+      .top-container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas:
+          "men men women-a"
+          "men men women-b";
+      }
+
+      .case {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+      }
+      .men {
+        grid-area: men;
+        background: url(https://assets.vogue.com/photos/61e9c42f201fe8db0bc39899/4:3/w_1600%2Cc_limit/00_promo.jpg);
+        background-size: 700px 370px;
+        background-position: center;
+      }
+
+      .women-a {
+        grid-area: women-a;
+        background: url(https://d2line.com/thatlook/wp-content/uploads/sites/4/2022/09/women-clothing-fashion-designerstyle-by-d2line.png);
+        background-size: 600px 200px;
+        background-position: center;
+      }
+
+      .women-b {
+        grid-area: women-b;
+        background: url(https://www.fashiongonerogue.com/wp-content/uploads/2021/06/Stylish-Woman-Collared-Shirt-Beige-Pants-Work-Outfit.jpg);
+        background-size: 600px 200px;
+        background-position: center;
+      }
+      .case h1 {
+        font-size: 2rem;
+        margin-bottom: 0;
+        color: #fff;
+      }
+
+      .case p {
+        font-size: 0.9rem;
+        margin-top: 0;
+        color: #fff;
+      }
+
+      .info {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem;
+      }
+
+      .info img {
+        max-width: 75%;
+      }
+      .description h2,
+      p,
+      button {
+        margin-top: 10px;
+      }
+      .second-container {
+        display: grid;
+        width: 1000px;
+        grid-template-columns: repeat(9, 1fr);
+        justify-content: center;
+        margin: 30px auto;
+        row-gap: 20px;
+      }
+      .second-container img {
+        width: 60px;
+        height: 60px;
+      }
+      .flight {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        width: 980px;
+        margin: 20px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a>E-Commerce Application</a>
+          </li>
+          <li>
+            <a href="/Users/anilpuchakayala/Desktop/E-com/e-com.html">Home</a>
+          </li>
+          <li>
+            <a href="/Users/anilpuchakayala/Desktop/E-com/profile.html"
+              >Profile</a
+            >
+          </li>
+          <li>
+            <a href="/Users/anilpuchakayala/Desktop/E-com/users.html">Users</a>
+          </li>
+          <li>
+            <a href="/Users/anilpuchakayala/Desktop/E-com/products.html"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a href="/Users/anilpuchakayala/Desktop/E-com/mycart.html"
+              >Mycart</a
+            >
+          </li>
+          <li>
+            <a href="#">Logout</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="second-container">
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Kzjwujb86o9Z1pOsYbViJ-JAY1GK96SAZA&usqp=CAU"
+          />
+          <p>Grocery</p>
+        </div>
+
+        <div>
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2022/3/BK/TA/UG/148618475/vivo-y19-mobile-phones.jpg"
+          />
+          <p>Mobile</p>
+        </div>
+        <div>
+          <img
+            src="https://images.herzindagi.info/image/2022/May/clothes-to-repeat-fashion-tips.jpg"
+          />
+          <p>Fashion</p>
+        </div>
+        <div>
+          <img
+            src="https://www.shutterstock.com/shutterstock/photos/1875797689/display_1500/stock-photo-different-modern-devices-on-color-background-1875797689.jpg"
+          />
+          <p>Electronics</p>
+        </div>
+        <div>
+          <img
+            src="https://img.freepik.com/free-vector/home-furniture-set_74855-15461.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699142400&semt=ais"
+          />
+          <p>Furniture</p>
+        </div>
+        <div>
+          <img
+            src="https://5.imimg.com/data5/XL/MI/MY-45738738/samsung-washing-machine.jpg"
+          />
+          <p>Appliances</p>
+        </div>
+        <div>
+          <img
+            src="https://img.freepik.com/free-photo/full-shot-travel-concept-with-landmarks_23-2149153258.jpg"
+          />
+          <p>Travel</p>
+        </div>
+        <div>
+          <img src="https://etimg.etb2bimg.com/photo/69431263.cms" />
+          <p>Two Wheelers</p>
+        </div>
+        <div>
+          <img src="https://m.media-amazon.com/images/I/713szPyljLL.jpg" />
+          <p>Toys</p>
+        </div>
+      </div>
+      <div>
+        <img
+          class="flight"
+          src="https://www.savethestudent.org/uploads/flights.jpg"
+        />
+      </div>
+      <div class="main-content">
+        <section class="top-container">
+          <div class="case men">
+            <h1>Men's Fashion</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+              ipsam! Nihil quo minima nulla atque!
+            </p>
+          </div>
+          <div class="case women-a">
+            <h1>Women's Fashion</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+              ipsam! Nihil quo minima nulla atque!
+            </p>
+          </div>
+          <div class="case women-b">
+            <h1>Modern Fashion</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+              ipsam! Nihil quo minima nulla atque!
+            </p>
+          </div>
+        </section>
+
+        <section class="info">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4OXzi?ver=3a58"
+            alt=""
+          />
+          <div class="description">
+            <h2>Macbook Pro</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              alias reiciendis deleniti possimus nemo non repellendus? Quae
+              atque vero modi quidem! Autem cupiditate fugit doloribus ad amet,
+              asperiores provident commodi.
+            </p>
+            <button>Learn More</button>
+          </div>
+        </section>
+
+        <section class="info">
+          <div class="description">
+            <h2>Samsung Galaxy S23 Ultra</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              alias reiciendis deleniti possimus nemo non repellendus? Quae
+              atque vero modi quidem! Autem cupiditate fugit doloribus ad amet,
+              asperiores provident commodi.
+            </p>
+            <button>Learn More</button>
+          </div>
+          <img
+            src="https://media.wired.com/photos/63d2f5edde734741c2ad3cf0/master/w_2560%2Cc_limit/Samsung-Galaxy-A14-5G-Review-Featured-Gear.jpg"
+            alt=""
+          />
+        </section>
+
+        <section class="info">
+          <img
+            src="https://images.philips.com/is/image/philipsconsumer/16223389e358476a91d7ae790094206e?$jpglarge$&wid=960"
+            alt=""
+          />
+          <div class="description">
+            <h2>Trimmer</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              alias reiciendis deleniti possimus nemo non repellendus? Quae
+              atque vero modi quidem! Autem cupiditate fugit doloribus ad amet,
+              asperiores provident commodi.
+            </p>
+            <button>Learn More</button>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <h3>Footer Component</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae alias
+          reiciendis deleniti possimus nemo non repellendus? Quae atque vero
+          modi quidem! Autem cupiditate fugit doloribus ad amet, asperiores
+          provident commodi.
+        </p>
+        <br />
+        <h4>All Copy Rights are Reserved</h4>
+      </footer>
+    </div>
+  </body>
+</html>

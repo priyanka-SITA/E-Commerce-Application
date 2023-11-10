@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="cs.css" />
+    <title>User Details</title>
+    <style>
+      .userContainer {
+        display: grid;
+        margin: 10px;
+      }
+      .userTable {
+        display: grid;
+        margin-top: 20px;
+      }
+      table th {
+        background-color: black;
+        color: white;
+        height: 30px;
+        font-weight: bolder;
+        margin-top: 10px;
+      }
+      table td {
+        text-align: center;
+      }
+      .radioButton {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      img {
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a>E-Commerce Application</a>
+          </li>
+          <li>
+            <a href="/Users/anilpuchakayala/Desktop/E-com/e-com.html">Home</a>
+          </li>
+          <li>
+            <a href="/Users/anilpuchakayala/Desktop/E-com/profile.html"
+              >Profile</a
+            >
+          </li>
+          <li>
+            <a href="/Users/anilpuchakayala/Desktop/E-com/users.html">Users</a>
+          </li>
+          <li>
+            <a href="/Users/anilpuchakayala/Desktop/E-com/products.html"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a href="/Users/anilpuchakayala/Desktop/E-com/mycart.html"
+              >Mycart</a
+            >
+          </li>
+          <li>
+            <a href="#">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="userContainer">
+      <div>
+        <h2 style="color: green">User Detail Form Random user me Wibsite</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa ipsum
+          quod labore, in tempore, ratione nostrum voluptatibus cupiditate esse
+          cum, nobis ab! Nam numquam officia maiores hic error eligendi odit.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni,
+          libero. Unde modi fugit hic! Ex voluptatem maxime aspernatur delectus
+          odit! Odio cupiditate natus cum velit nemo illo beatae magni hic.
+        </p>
+        <button>Get Users</button>
+      </div>
+
+      <div class="userTable">
+        <div class="radioButton">
+          <input type="radio" name="All" id="all" /><label for="all">All</label>
+          <input type="radio" name="Male" id="male" /><label for="male"
+            >Male</label
+          >
+          <input type="radio" name="Female" id="female" /><label for="female"
+            >Female</label
+          >
+        </div>
+        <table style="margin-top: 10px">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Email</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"
+                />
+              </td>
+              <td>Rodny</td>
+              <td>Male</td>
+              <td>Rodny@gmail.com</td>
+              <td><button>Details</button></td>
+            </tr>
+
+            <tr>
+              <td>
+                <img
+                  src="https://media.istockphoto.com/id/1497142422/photo/close-up-photo-portrait-of-young-successful-entrepreneur-businessman-investor-wearing-glasses.webp?b=1&s=170667a&w=0&k=20&c=SXKe66SKDzYHhQOziZgjxmoyeqHGCYwtxz9BouB1kis="
+                />
+              </td>
+              <td>Krish</td>
+              <td>Male</td>
+              <td>Krish@gmail.com</td>
+              <td><button>Details</button></td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://img.freepik.com/free-photo/portrait-smiley-modern-male_23-2148514900.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698192000&semt=ais"
+                />
+              </td>
+              <td>Ravi</td>
+              <td>Male</td>
+              <td>Ravi.Kanth@gmail.com</td>
+              <td><button>Details</button></td>
+            </tr>
+
+            <tr>
+              <td>
+                <img
+                  src="https://miro.medium.com/v2/resize:fit:1400/1*Hga_QeZ1aIBDCPZ1WxSf0g.jpeg"
+                />
+              </td>
+              <td>Modi</td>
+              <td>Male</td>
+              <td>Modi@gmail.com</td>
+              <td><button>Details</button></td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://images.ctfassets.net/h6goo9gw1hh6/6R0kusgfZmQv1jNcHSL9GU/f4c9517962f99704c3a0df849061b380/linkedIN-profile-FB.jpg"
+                />
+              </td>
+              <td>Janny</td>
+              <td>Male</td>
+              <td>Janny@gmail.com</td>
+              <td><button>Details</button></td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="data:image/jpeg;base64,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"
+                />
+              </td>
+              <td>Kathi</td>
+              <td>Female</td>
+              <td>Kathi@gmail.com</td>
+              <td><button>Details</button></td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://images.assetsdelivery.com/compings_v2/fizkes/fizkes2011/fizkes201102042.jpg"
+                />
+              </td>
+              <td>Rosy</td>
+              <td>Female</td>
+              <td>Rosy@gmail.com</td>
+              <td><button>Details</button></td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://www.shutterstock.com/image-photo/profile-picture-smiling-millennial-asian-260nw-1836020740.jpg"
+                />
+              </td>
+              <td>thara</td>
+              <td>Female</td>
+              <td>Thara@gmail.com</td>
+              <td><button>Details</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <footer>
+        <h3>Footer Component</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae alias
+          reiciendis deleniti possimus nemo non repellendus? Quae atque vero
+          modi quidem! Autem cupiditate fugit doloribus ad amet, asperiores
+          provident commodi.
+        </p>
+        <br />
+        <h4>All Copy Rights are Reserved</h4>
+      </footer>
+    </div>
+  </body>
+</html>
